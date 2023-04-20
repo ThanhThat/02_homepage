@@ -20,3 +20,18 @@
   margin-bottom: 6.4rem;
   color: $gray;
 }
+
+@mixin btn {
+  width: 23rem;
+  height: 5.6rem;
+  line-height: 5.6rem;
+  font-size: 1.6rem;
+  color: $white;
+  transition: all 0.25s ease-in;
+  will-change: opacity, font-weight;
+
+  &:hover {
+    opacity: 0.8;
+    font-weight: 700;
+  }
+}

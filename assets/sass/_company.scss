@@ -1,0 +1,44 @@
+.company {
+  max-width: 155rem;
+  margin: 0 auto;
+  width: 100%;
+  background: rgb(246, 104, 101);
+  background: linear-gradient(
+    90deg,
+    rgba(246, 104, 101, 1) 0%,
+    rgba(246, 136, 38, 1) 50%
+  );
+  border-radius: 2rem;
+  height: 66.6rem;
+  padding: 0 16rem;
+  @include flex();
+  gap: 0 29rem;
+
+  &-text {
+    width: calc(50% - 14.5rem);
+
+    &-heading {
+      @include heading;
+      color: $white;
+    }
+
+    &-desc {
+      @include desc;
+      color: $white;
+    }
+  }
+
+  &-img-list {
+    width: calc(50% - 14.5rem);
+    @include flex(flex-start, center, wrap);
+    gap: 10.4rem 12rem;
+
+    .company-img-item {
+      width: calc(50% - 6rem);
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
