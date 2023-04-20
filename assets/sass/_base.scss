@@ -22,3 +22,14 @@ img {
   max-width: 117rem;
   margin: 0 auto;
 }
+
+.btn {
+  border: none;
+  background-color: #ccc;
+  color: #000;
+  min-width: 15rem;
+  display: inline-block;
+  padding: 0 2.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
