@@ -82,6 +82,11 @@ img {
   font-weight: 700;
 }
 
+.btn.btn-lg {
+  width: 27rem;
+  height: 6.4rem;
+}
+
 .header {
   border-bottom: 1px solid #978eed;
   margin: 0 -1.6rem;
@@ -473,4 +478,36 @@ img {
 }
 .integrate-box-list .integrate-box-item .box-name {
   font-size: 2rem;
+}
+
+.business {
+  position: relative;
+}
+.business-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+  text-align: center;
+}
+.business-text-heading {
+  font-size: 6rem;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+.business-text-desc {
+  font-size: 2.4rem;
+  color: #fff;
+  margin-bottom: 6.4rem;
+}
+.business::before {
+  content: "";
+  display: block;
+  background-image: url("../images/content/grow_business.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50%;
+  margin: 0 -1.6rem;
 }
