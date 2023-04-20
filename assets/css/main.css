@@ -318,7 +318,7 @@ img {
 
 .company {
   max-width: 155rem;
-  margin: 0 auto;
+  margin: 0 auto 20rem;
   width: 100%;
   background: rgb(246, 104, 101);
   background: -webkit-gradient(linear, left top, right top, from(rgb(246, 104, 101)), color-stop(50%, rgb(246, 136, 38)));
@@ -378,4 +378,99 @@ img {
 }
 .company-img-list .company-img-item img {
   width: 100%;
+}
+
+.integrate {
+  margin-bottom: 20rem;
+}
+.integrate-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0 13rem;
+}
+.integrate-main-text {
+  width: calc(35% - 6.5rem);
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.integrate-heading {
+  font-size: 3.6rem;
+  font-family: "Myriad Pro", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 2.6rem;
+  font-weight: 700;
+}
+.integrate-desc {
+  text-align: justify;
+  font-size: 1.8rem;
+  line-height: 1.9;
+  margin-bottom: 6.4rem;
+  color: #6a727f;
+}
+.integrate-box-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
+}
+.integrate-box-list .integrate-box-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+.integrate-box-list .integrate-box-item {
+  width: 32rem;
+  height: 29rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4.8rem 0;
+}
+.integrate-box-list .integrate-box-item .box-name {
+  font-size: 2rem;
 }
