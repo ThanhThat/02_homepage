@@ -1,0 +1,52 @@
+.header {
+  border-bottom: 1px solid #978eed;
+  margin: 0 -1.6rem;
+
+  &-main {
+    @include flex(space-between);
+    padding: 4rem 0;
+  }
+
+  &-nav {
+    @include flex();
+    gap: 0 6rem;
+
+    a {
+      font-family: $primary-font;
+      font-size: 1.6rem;
+      display: inline-block;
+      color: $white;
+      text-transform: uppercase;
+      transition: all 0.25s ease-in;
+      will-change: color;
+
+      &:hover {
+        color: $green;
+      }
+
+      img {
+        transition: all 0.25s ease-in;
+        will-change: opacity;
+      }
+
+      img:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &::before {
+    content: "";
+    background-image: url("../images/header/header_bg.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 60%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
