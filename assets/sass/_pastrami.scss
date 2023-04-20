@@ -1,0 +1,33 @@
+.pastrami {
+  position: relative;
+
+  &-img {
+    width: 55%;
+    margin-right: auto;
+    margin-left: -1.6rem;
+  }
+
+  &-main {
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &-img {
+      margin-bottom: 5.6rem;
+    }
+
+    &-desc {
+      width: 80%;
+      font-size: 3rem;
+      color: $gray-dark;
+      line-height: 1.6;
+      margin-bottom: 5.6rem;
+    }
+
+    &-quote {
+      font-size: 1.8rem;
+      color: gray;
+    }
+  }
+}
