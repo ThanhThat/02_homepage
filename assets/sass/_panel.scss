@@ -1,0 +1,29 @@
+.panel {
+  position: relative;
+
+  &-main {
+    position: absolute;
+    top: 50%;
+    // left: 25%;
+    transform: translateY(-50%);
+
+    .panel-heading {
+      @include heading;
+      width: 40%;
+    }
+
+    .panel-desc {
+      @include desc;
+      width: 40%;
+    }
+  }
+
+  &-img {
+    width: 65%;
+    margin-left: auto;
+    margin-right: -1.6rem;
+    img {
+      width: 100%;
+    }
+  }
+}

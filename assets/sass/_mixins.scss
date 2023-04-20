@@ -4,3 +4,19 @@
   align-items: $align;
   flex-wrap: $wrap;
 }
+
+@mixin heading {
+  font-size: 3.6rem;
+  font-family: $primary-font;
+  line-height: 1.5;
+  margin-bottom: 2.6rem;
+  font-weight: 700;
+}
+
+@mixin desc {
+  text-align: justify;
+  font-size: 1.8rem;
+  line-height: 1.9;
+  margin-bottom: 6.4rem;
+  color: $gray;
+}
