@@ -1,0 +1,28 @@
+.work {
+  margin-bottom: 4rem;
+  &-main {
+    @include flex(space-between);
+  }
+
+  &-main-reverse {
+    flex-direction: row-reverse;
+  }
+
+  &-img {
+    width: 50%;
+    padding: 1.6rem;
+  }
+
+  &-content {
+    width: 50%;
+    padding: 14rem;
+
+    .work-heading {
+      @include heading;
+    }
+
+    .work-desc {
+      @include desc;
+    }
+  }
+}

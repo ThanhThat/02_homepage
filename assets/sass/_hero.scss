@@ -1,14 +1,16 @@
 .hero {
+  // height: 100vh;
+  margin-bottom: 19rem;
   &-main {
-    height: 96rem;
     position: relative;
+    height: 100vh;
   }
 
   &-content {
     position: absolute;
-    top: 50%;
+    top: 100%;
     left: 0;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
   }
 
   &-heading {
