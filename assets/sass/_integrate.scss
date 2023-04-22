@@ -5,7 +5,7 @@
     gap: 0 13rem;
 
     &-text {
-      width: calc(35% - 6.5rem);
+      flex: 2;
       align-self: center;
     }
   }
@@ -19,7 +19,8 @@
   }
 
   &-box-list {
-    @include flex();
+    flex: 3;
+    @include flex(flex-start, center, nowrap);
     gap: 3rem;
 
     .integrate-box-group {
@@ -39,6 +40,35 @@
 
       .box-name {
         font-size: 2rem;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &-main {
+      gap: 0 6rem;
+      justify-content: space-between;
+      &-text {
+        flex: 1;
+      }
+    }
+
+    &-box-list {
+      gap: 1.6rem;
+      flex: unset;
+      width: 50%;
+
+      .integrate-box-group {
+        width: calc(50% - 0.8rem);
+        gap: 1.6rem;
+        .integrate-box-item {
+          width: 100%;
+        }
+      }
+
+      .integrate-box-item {
+        width: calc(50% - 0.8rem);
+        height: 22rem;
       }
     }
   }

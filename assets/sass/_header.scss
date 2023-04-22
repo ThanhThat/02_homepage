@@ -41,12 +41,18 @@
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 60%;
+    padding-top: 80%;
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: -1;
+  }
+
+  @media (max-width: 1024px) {
+    &-main {
+      padding: 2rem 1.6rem;
+    }
   }
 }

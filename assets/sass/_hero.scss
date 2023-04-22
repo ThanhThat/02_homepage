@@ -1,16 +1,15 @@
 .hero {
-  // height: 100vh;
-  margin-bottom: 19rem;
+  margin-bottom: 20rem;
   &-main {
     position: relative;
-    height: 100vh;
+    height: 49rem;
   }
 
   &-content {
     position: absolute;
-    top: 100%;
+    top: 50%;
     left: 0;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
   }
 
   &-heading {
@@ -50,10 +49,18 @@
     }
   }
 
-  @media (max-width: 1919px) {
+  @media (max-width: 1024px) {
     &-content {
-      top: 20%;
-      transform: translateY(-20%);
+      top: 40%;
+      transform: translateY(-40%);
+    }
+    &-heading {
+      font-size: 3rem;
+    }
+
+    &-desc {
+      font-size: 1.8rem;
+      font-weight: 200;
     }
   }
 }

@@ -31,4 +31,10 @@
     padding-top: 50%;
     margin: 0 -1.6rem;
   }
+
+  @media (max-width: 1024px) {
+    &-text {
+      width: 80%;
+    }
+  }
 }
