@@ -1,11 +1,8 @@
 .work {
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
   &-main {
-    @include flex(space-between);
-  }
-
-  &-main-reverse {
-    flex-direction: row-reverse;
+    @include flex();
+    gap: 0 16rem;
   }
 
   &-img {
@@ -14,8 +11,7 @@
   }
 
   &-content {
-    width: 50%;
-    padding: 14rem;
+    width: 30%;
 
     .work-heading {
       @include heading;
@@ -23,6 +19,13 @@
 
     .work-desc {
       @include desc;
+    }
+  }
+
+  @media (max-width: 1024px) {
+
+    &-main {
+      gap: 0 8rem;
     }
   }
 }

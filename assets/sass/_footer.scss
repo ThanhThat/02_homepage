@@ -1,0 +1,92 @@
+.footer {
+  padding-top: 15rem;
+  background-color: #282f3a;
+  margin: 0 -1.6rem;
+  color: $gray-light;
+
+  &-main {
+    @include flex(flex-start, flex-start, nowrap);
+    gap: 0 15.8rem;
+    padding-bottom: 14rem;
+  }
+
+  &-first,
+  &-third {
+    flex: 4;
+  }
+
+  &-second {
+    flex: 2;
+
+    ul {
+      a {
+        display: inline-block;
+        color: $gray-light;
+        font-size: 1.6rem;
+        line-height: 3;
+      }
+    }
+  }
+
+  &-third {
+    ul {
+      margin-bottom: 3.6rem;
+      li {
+        display: inline-block;
+        line-height: 1.9;
+      }
+    }
+  }
+
+  &-logo {
+    margin-bottom: 4.6rem;
+  }
+
+  &-desc {
+    line-height: 1.9;
+    margin-bottom: 4rem;
+  }
+
+  &-social-list {
+    @include flex;
+    gap: 0 4rem;
+  }
+
+  &-item-heading {
+    font-size: 1.8rem;
+    color: $white;
+    margin-bottom: 4.6rem;
+  }
+
+  &-bottom {
+    background-color: #252b36;
+    height: 15rem;
+
+    &-main {
+      position: relative;
+    }
+
+    &-copyright {
+      .text-white {
+        color: $white;
+        line-height: 15rem;
+      }
+    }
+
+    &-rocket {
+      position: absolute;
+      right: 0;
+      top: -3.2rem;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 15rem 1.6rem 0;
+
+    &-bottom {
+      margin: 0 -1.6rem;
+      padding-right: 1.6rem;
+      padding-left: 1.6rem;
+    }
+  }
+}
