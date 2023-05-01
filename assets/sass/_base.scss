@@ -41,6 +41,7 @@ ul {
 
 .btn.btn-primary {
   @include btn;
+  max-width: 100%;
   background-color: $primary-color;
 }
 
