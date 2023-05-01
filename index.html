@@ -6,11 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>02 Homepage</title>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- custom css -->
   <link rel="stylesheet" href="./assets/css/main.min.css">
+
+  <!-- js -->
+  <script src="./assets/js/main.js" defer></script>
 </head>
 
 <body>
   <header class="header">
+
 
     <div class="container">
       <div class="header-main">
@@ -29,6 +39,22 @@
           <a href="#"><img src="./assets/images/header/menu.png" alt="menu icon"></a>
         </nav>
 
+        <nav class="nav-mobile">
+          <a href="#">Home</a>
+          <a href="#">product</a>
+          <a href="#">demo</a>
+          <a href="#">Testimonials</a>
+          <a href="#">Contact</a>
+
+          <button class="nav-close"><i class="fa-solid fa-circle-xmark"></i></button>
+        </nav>
+        <div class="header-overlay"></div>
+        <div class="header-right-mobile">
+          <a href="#"><img src="./assets/images/header/search.png" alt="search"></a>
+          <a href="#"><img src="./assets/images/header/menu.png" alt="list icon"></a>
+          <a href="#" class="menu-mobile-icon">Menu <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+
 
       </div>
     </div>
@@ -37,6 +63,10 @@
 
   <main>
     <section class="hero">
+
+      <div class="hero-img">
+        <img src="./assets/images/header/header_bg.png" alt="header background">
+      </div>
 
       <div class="container">
         <div class="hero-main">
