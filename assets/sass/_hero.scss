@@ -1,25 +1,6 @@
 .hero {
-  margin-bottom: 20rem;
-  margin: 0 -1.6rem;
-  height: 97rem;
-  position: relative;
-
-  &-img {
+  &-main {
     position: absolute;
-    z-index: -2;
-    img {
-      object-fit: cover;
-    }
-  }
-
-  &-content {
-    padding: 0 1.6rem;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    z-index: 1;
-    text-shadow: 0 0 2px rgba(0 0 0 / 0.8);
   }
 
   &-heading {
@@ -60,7 +41,6 @@
   }
 
   @media (max-width: 1024px) {
-    height: 40vh;
     &-content {
       top: 40%;
       transform: translateY(-40%);

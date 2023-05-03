@@ -1,16 +1,24 @@
 .header {
-  border-bottom: 1px solid #978eed;
   margin: 0 -1.6rem;
-  background: rgb(96, 104, 230);
-  background: linear-gradient(
-    90deg,
-    rgba(96, 104, 230, 1) 0%,
-    rgba(125, 74, 228, 1) 50%
-  );
+  position: relative;
+  margin-bottom: 18rem;
 
   &-main {
-    @include flex(space-between);
-    padding: 4rem 0;
+    position: absolute;
+    top: 0;
+    width: $mw-container;
+    &-content {
+      @include flex(space-between, center);
+      width: 100%;
+      height: $h-height;
+    }
+  }
+
+  &-logo {
+    a {
+      line-height: $h-height;
+      display: inline-block;
+    }
   }
 
   &-nav {
@@ -19,6 +27,7 @@
 
     a {
       font-family: $primary-font;
+      line-height: $h-height;
       font-size: 1.6rem;
       display: inline-block;
       color: $white;
@@ -129,20 +138,18 @@
     }
   }
 
-  // &::before {
-  //   content: "";
-  //   background-image: url("../images/header/header_bg.png");
-  //   background-position: top center;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   padding-top: 100%;
-  //   display: block;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   z-index: -1;
-  // }
+  &-seperate {
+    border: 1px solid #9f86ec;
+    position: absolute;
+    top: $h-height;
+    width: 100%;
+  }
+
+  .hero {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
   @media (max-width: 1024px) {
     &-main {
