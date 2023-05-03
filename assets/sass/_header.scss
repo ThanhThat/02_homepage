@@ -146,12 +146,6 @@
     width: 100%;
   }
 
-  .hero {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
   @media (max-width: 1024px) {
     &-main {
       width: 100%;
@@ -188,6 +182,21 @@
   }
 
   @media (max-width: 600px) {
+    &-main {
+      &-content {
+        height: calc($h-height / 3 + 10px);
+      }
+    }
+    &-nav {
+      a {
+        line-height: calc($h-height / 3 + 10px);
+      }
+    }
+
+    &-seperate {
+      top: calc($h-height / 3 + 10px);
+    }
+
     .nav-mobile {
       .nav-close {
         right: -15rem;
@@ -196,10 +205,44 @@
   }
 
   @media (max-width: 414px) {
+    &-main {
+      &-content {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        height: calc($h-height);
+        padding: 1.6rem 0;
+      }
+    }
+
+    &-logo {
+      flex: 1;
+      height: unset;
+    }
+
+    &-nav {
+      flex: 1;
+    }
+
+    &-seperate {
+      top: calc($h-height);
+    }
+
     .nav-mobile {
       .nav-close {
         right: -8rem;
         top: 2rem;
+      }
+    }
+
+    &-img {
+      height: 80vh;
+
+      img {
+        height: inherit;
+        object-fit: cover;
       }
     }
   }

@@ -1,4 +1,8 @@
 .hero {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 1.6rem;
   &-main {
     position: absolute;
   }
@@ -42,8 +46,8 @@
 
   @media (max-width: 1024px) {
     &-content {
-      top: 40%;
-      transform: translateY(-40%);
+      top: 50%;
+      transform: translateY(-50%);
     }
     &-heading {
       font-size: 3rem;
@@ -52,16 +56,49 @@
     &-desc {
       font-size: 1.8rem;
       font-weight: 200;
+      text-shadow: 0 0 2px rgba(0 0 0 / 1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    &-desc {
+      margin-top: 1.2rem;
+      margin-bottom: 1.2rem;
     }
   }
 
   @media (max-width: 600px) {
+    &-heading {
+      font-size: 2.2rem;
+    }
     &-desc {
-      margin-bottom: 2rem;
+      margin-bottom: 1.6rem;
+      font-size: 1.6rem;
+    }
+
+    .btn.btn-hero {
+      width: 18rem;
+      height: 4rem;
+      line-height: 4rem;
+      font-size: 1.6rem;
+    }
+  }
+
+  @media (max-width: 414px) {
+    &-heading {
+      font-size: 4rem;
+      text-shadow: 0 0 2px rgba(0 0 0 / 1);
+    }
+    &-desc {
+      margin-bottom: 3rem;
+      font-size: 1.8rem;
     }
 
     .btn.btn-hero {
       width: 20rem;
+      height: 6rem;
+      line-height: 6rem;
+      font-size: 1.8rem;
     }
   }
 }

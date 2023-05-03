@@ -276,12 +276,6 @@ ul {
   top: 12rem;
   width: 100%;
 }
-.header .hero {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
 @media (max-width: 1024px) {
   .header-main {
     width: 100%;
@@ -320,17 +314,70 @@ ul {
   }
 }
 @media (max-width: 600px) {
+  .header-main-content {
+    height: calc(4rem + 10px);
+  }
+  .header-nav a {
+    line-height: calc(4rem + 10px);
+  }
+  .header-seperate {
+    top: calc(4rem + 10px);
+  }
   .header .nav-mobile .nav-close {
     right: -15rem;
   }
 }
 @media (max-width: 414px) {
+  .header-main-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.6rem;
+    height: 12rem;
+    padding: 1.6rem 0;
+  }
+  .header-logo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: unset;
+  }
+  .header-nav {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .header-seperate {
+    top: 12rem;
+  }
   .header .nav-mobile .nav-close {
     right: -8rem;
     top: 2rem;
   }
+  .header-img {
+    height: 80vh;
+  }
+  .header-img img {
+    height: inherit;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
+.hero {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 0 1.6rem;
+}
 .hero-main {
   position: absolute;
 }
@@ -369,9 +416,9 @@ ul {
 }
 @media (max-width: 1024px) {
   .hero-content {
-    top: 40%;
-    -webkit-transform: translateY(-40%);
-            transform: translateY(-40%);
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
   .hero-heading {
     font-size: 3rem;
@@ -379,14 +426,44 @@ ul {
   .hero-desc {
     font-size: 1.8rem;
     font-weight: 200;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+  }
+}
+@media (max-width: 768px) {
+  .hero-desc {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
   }
 }
 @media (max-width: 600px) {
+  .hero-heading {
+    font-size: 2.2rem;
+  }
   .hero-desc {
-    margin-bottom: 2rem;
+    margin-bottom: 1.6rem;
+    font-size: 1.6rem;
+  }
+  .hero .btn.btn-hero {
+    width: 18rem;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 414px) {
+  .hero-heading {
+    font-size: 4rem;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+  }
+  .hero-desc {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
   }
   .hero .btn.btn-hero {
     width: 20rem;
+    height: 6rem;
+    line-height: 6rem;
+    font-size: 1.8rem;
   }
 }
 
