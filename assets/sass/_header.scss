@@ -15,8 +15,9 @@
   }
 
   &-logo {
+    height: inherit;
+    @include flex(flex-start, center);
     a {
-      line-height: $h-height;
       display: inline-block;
     }
   }
@@ -153,7 +154,21 @@
 
   @media (max-width: 1024px) {
     &-main {
-      padding: 2rem 1.6rem;
+      width: 100%;
+      padding: 0 1.6rem;
+
+      &-content {
+        height: calc($h-height / 2);
+      }
+    }
+    &-nav {
+      a {
+        line-height: calc($h-height / 2);
+      }
+    }
+
+    &-seperate {
+      top: calc($h-height / 2);
     }
   }
 

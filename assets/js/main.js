@@ -3,6 +3,8 @@
   if (!headerElem) return;
 
   headerElem.addEventListener("click", (e) => {
+    e.preventDefault();
+
     const navMobileElem = headerElem.querySelector(".nav-mobile");
     const overlayElem = headerElem.querySelector(".header-overlay");
     if (!navMobileElem || !overlayElem) return;
