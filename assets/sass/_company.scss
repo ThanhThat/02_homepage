@@ -1,6 +1,6 @@
 .company {
   max-width: 155rem;
-  margin: 0 auto 20rem;
+  margin: 0 auto 10rem;
   width: 100%;
   background: rgb(246, 104, 101);
   background: linear-gradient(
@@ -53,6 +53,32 @@
     &-img-list {
       width: calc(50% - 6rem);
       gap: 8rem 10rem;
+    }
+  }
+
+  @media (max-width: 46.1875em) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem 0;
+    padding: 2rem;
+    // margin: unset;
+    height: auto;
+
+    &-text {
+      width: 100%;
+
+      &-heading {
+        margin-bottom: 1.6rem;
+      }
+
+      &-desc {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &-img-list {
+      width: 90%;
     }
   }
 }

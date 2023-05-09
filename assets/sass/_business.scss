@@ -37,4 +37,21 @@
       width: 80%;
     }
   }
+
+  @media (max-width: 46.1875em) {
+    &-text {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      &-heading {
+        font-size: 1.8rem;
+        margin-bottom: 1.6rem;
+      }
+
+      &-desc {
+        margin-bottom: 2rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
 }

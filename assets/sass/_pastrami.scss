@@ -15,7 +15,7 @@
     transform: translateY(-50%);
 
     &-img {
-      margin-bottom: 5.6rem;
+      margin-bottom: 2rem;
     }
 
     &-desc {
@@ -29,6 +29,33 @@
     &-quote {
       font-size: 1.8rem;
       color: gray;
+    }
+  }
+
+  @media (max-width: 46.1875em) {
+    &-main {
+      position: static;
+      // /* hoặc position: relative; tùy vào trường hợp của bạn */
+      // top: auto;
+      // bottom: auto;
+      // left: auto;
+      // right: auto;
+      transform: none;
+      width: 100%;
+
+      &-heading {
+        width: inherit;
+      }
+
+      &-desc {
+        width: inherit;
+        margin-bottom: 3rem;
+      }
+    }
+
+    &-img {
+      width: 100%;
+      object-fit: cover;
     }
   }
 }

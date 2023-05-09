@@ -22,10 +22,32 @@
     }
   }
 
-  @media (max-width: 1024px) {
-
+  @media (max-width: 64em) {
     &-main {
       gap: 0 8rem;
+    }
+  }
+
+  @media (max-width: 46.1875em) {
+    &-main {
+      flex-direction: column;
+    }
+
+    &-img {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+
+    &-content {
+      width: 100%;
+
+      .work-desc {
+        margin-bottom: 3rem;
+      }
+    }
+
+    .btn.btn-work.btn-primary {
+      // margin-bottom: 10rem;
     }
   }
 }

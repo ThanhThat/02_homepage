@@ -5,9 +5,9 @@
   color: $gray-light;
 
   &-main {
-    @include flex(flex-start, flex-start, nowrap);
+    @include flex(flex-start, flex-start, wrap);
     gap: 0 15.8rem;
-    padding-bottom: 14rem;
+    padding: 0 1.6rem 14rem;
   }
 
   &-first,
@@ -64,6 +64,8 @@
 
     &-main {
       position: relative;
+      height: 15rem;
+      padding: 0 1.6rem;
     }
 
     &-copyright {
@@ -75,7 +77,7 @@
 
     &-rocket {
       position: absolute;
-      right: 0;
+      right: 1.6rem;
       top: -3.2rem;
     }
   }
@@ -87,6 +89,36 @@
       margin: 0 -1.6rem;
       padding-right: 1.6rem;
       padding-left: 1.6rem;
+    }
+  }
+
+  @media (max-width: 46.1875em) {
+    padding-top: 6rem;
+
+    &-main {
+      flex-direction: column;
+      gap: 6rem 0;
+      padding-bottom: 6rem;
+    }
+
+    &-logo {
+      margin-bottom: 2rem;
+    }
+
+    &-item-heading {
+      margin-bottom: 2rem;
+    }
+
+    &-bottom {
+      &-copyright {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .text-white {
+          line-height: 1.8;
+        }
+      }
     }
   }
 }

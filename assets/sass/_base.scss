@@ -37,12 +37,20 @@ ul {
   padding: 0 2.6rem;
   border-radius: 4px;
   cursor: pointer;
+
+  @media (min-width: 64em) {
+    width: 24rem;
+  }
 }
 
 .btn.btn-primary {
   @include btn;
   max-width: 100%;
   background-color: $primary-color;
+
+  @media (max-width: 46.1875em) {
+    width: 100%;
+  }
 }
 
 .btn.btn-secondary {
@@ -55,4 +63,9 @@ ul {
 .btn.btn-lg {
   width: 27rem;
   height: 6.4rem;
+
+  @media (max-width: 46.1875em) {
+    height: 4rem;
+    line-height: 4rem;
+  }
 }

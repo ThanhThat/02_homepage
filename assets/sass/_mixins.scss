@@ -22,7 +22,7 @@
 }
 
 @mixin btn {
-  width: 23rem;
+  max-width: 23rem;
   height: 5.6rem;
   line-height: 5.6rem;
   font-size: 1.6rem;

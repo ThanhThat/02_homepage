@@ -27,4 +27,32 @@
       width: 100%;
     }
   }
+
+  @media (max-width: 46.1875em) {
+    // position: unset;
+    &-main {
+      position: static;
+      // /* hoặc position: relative; tùy vào trường hợp của bạn */
+      // top: auto;
+      // bottom: auto;
+      // left: auto;
+      // right: auto;
+      transform: none;
+      width: 100%;
+
+      .panel-heading {
+        width: inherit;
+      }
+
+      .panel-desc {
+        width: inherit;
+        margin-bottom: 3rem;
+      }
+    }
+
+    &-img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
 }

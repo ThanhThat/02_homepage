@@ -6,9 +6,12 @@
   &-main {
     position: absolute;
     top: 0;
-    width: $mw-container;
+    max-width: $mw-container;
+    width: 100%;
+    padding: 0 1.6rem;
+
     &-content {
-      @include flex(space-between, center);
+      @include flex(space-between, start);
       width: 100%;
       height: $h-height;
     }
@@ -16,24 +19,25 @@
 
   &-logo {
     height: inherit;
-    @include flex(flex-start, center);
+    @include flex(center, center);
     a {
       display: inline-block;
     }
   }
 
   &-nav {
-    @include flex();
+    @include flex(center, center);
     gap: 0 6rem;
 
     a {
       font-family: $primary-font;
-      line-height: $h-height;
+      // line-height: $h-height;
       font-size: 1.6rem;
       display: inline-block;
       color: $white;
       text-transform: uppercase;
       transition: all 0.25s ease-in;
+      line-height: $h-height;
       will-change: color;
 
       &:hover {
@@ -81,7 +85,7 @@
     .nav-close {
       position: absolute;
       top: 3rem;
-      right: -20rem;
+      right: -15rem;
       z-index: 10;
       background-color: transparent;
       border: none;
@@ -112,6 +116,7 @@
 
   &-right-mobile {
     display: none;
+    height: 100%;
 
     .menu-mobile-icon {
       text-decoration: none;
@@ -146,88 +151,69 @@
     width: 100%;
   }
 
-  @media (max-width: 1024px) {
+  // Tablet
+  @media (min-width: 46.25em) and (max-width: 63.9375em) {
     &-main {
       width: 100%;
       padding: 0 1.6rem;
 
       &-content {
-        height: calc($h-height / 2);
+        height: $h-height;
       }
     }
     &-nav {
       a {
-        line-height: calc($h-height / 2);
+        line-height: $h-height;
       }
     }
 
     &-seperate {
-      top: calc($h-height / 2);
+      top: $h-height;
     }
   }
 
-  @media (max-width: 768px) {
+  // menu for tablet small
+  @media (max-width: 58.75em) {
     &-nav {
       display: none;
     }
 
+    // when click open mobile, add this class to element nav mobile
     .nav-mobile-open {
       display: block;
     }
 
     &-right-mobile {
-      @include flex();
+      @include flex(center, center);
       gap: 0 2rem;
     }
-  }
 
-  @media (max-width: 600px) {
-    &-main {
-      &-content {
-        height: calc($h-height / 3 + 10px);
-      }
-    }
-    &-nav {
-      a {
-        line-height: calc($h-height / 3 + 10px);
-      }
-    }
+    &-img {
+      height: 80vh;
 
-    &-seperate {
-      top: calc($h-height / 3 + 10px);
-    }
-
-    .nav-mobile {
-      .nav-close {
-        right: -15rem;
+      img {
+        height: inherit;
+        object-fit: cover;
+        width: 100%;
       }
     }
   }
 
-  @media (max-width: 414px) {
+  // menu for mobile small
+  @media (max-width: 25.875em) {
     &-main {
       &-content {
+        height: auto;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        gap: 1.6rem;
-
-        height: calc($h-height);
+        gap: 2rem 0;
         padding: 1.6rem 0;
       }
     }
 
-    &-logo {
-      flex: 1;
-      height: unset;
-    }
-
-    &-nav {
-      flex: 1;
-    }
-
     &-seperate {
-      top: calc($h-height);
+      top: $h-height;
     }
 
     .nav-mobile {
